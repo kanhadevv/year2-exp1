@@ -104,7 +104,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(background3.jpg)no-repeat;
+    background:url(mic.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -366,9 +366,11 @@ header .fa-bars{
     color:#999;
 }
 
-
-
-
+.product img {
+    width: 100%;
+    height: auto;
+  }
+  
 .contact .row{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -473,7 +475,7 @@ header .fa-bars{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(mic.jpeg)
+    background: var(--pink);
 
 }
 
@@ -481,10 +483,10 @@ header .fa-bars{
     width: 100%;
     background: sandybrown;
     color: #fff;
-    font-size: 36px;
+    font-size: 25px;
     text-align: center;
-    padding: 30px 40px;
-    border-radius: 10px;
+    padding: 25px 30px;
+    border-radius: 4px;
 }
 
 .wrapper .input-box {
@@ -566,8 +568,15 @@ header .fa-bars{
     text-decoration: underline;
 }
 
+@media (max-width:768px){ 
 
-@media (max-width:768px){
+    body {
+        font-size: 14px;
+      }
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
     header .fa-bars{
         display: block;
     }

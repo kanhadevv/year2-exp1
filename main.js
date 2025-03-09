@@ -54,3 +54,8 @@ document.querySelectorAll(".user-btn").forEach(button => {
         alert("User options coming soon!");
     });
 });
+
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Order placed successfully!");
+  });
